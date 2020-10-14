@@ -4,6 +4,12 @@ import * as Yup from 'yup';
 import styled from 'styled-components';
 
 export default function ContactForm() {
+    const encode = (data) => {
+        return Object.keys(data)
+          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+          .join("&");
+      }
+
     return (
         <>
         <Formik 
@@ -19,13 +25,23 @@ export default function ContactForm() {
                     .max(255, 'Must be 255 characters or less')
                     .required('Required')
             })}
-            onSubmit={(values, {setSubmitting}) => {
-                setTimeout(() => {
-                    setSubmitting(false);
-                }, 400)
+            onSubmit={(values, actions) => {
+                fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: encode({ "form-name": "contact-demo", ...values })
+                  })
+                  .then(() => {
+                    alert('Success');
+                    actions.resetForm()
+                  })
+                  .catch(() => {
+                    alert('Error');
+                  })
+                  .finally(() => actions.setSubmitting(false))
             }}
         >
-            <Form className="contact-form" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+            <Form className="contact-demo" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                 <label htmlFor="firstName">Your name:</label>
                 <Field as={StyledInput} name="firstName" type="text"/>
                 <ErrorMessage component={StyledError} name="firstName"/>
