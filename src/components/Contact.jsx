@@ -4,6 +4,7 @@ import {Container} from './Hero';
 import {SectionTitle} from '../components/AboutMe';
 import ContactForm from './ContactForm';
 import ContactFormNetlify from './ContactFormNetlify';
+import NewContactForm from './NewContactForm';
 
 export default function Contact() {
     return (
@@ -37,8 +38,7 @@ export default function Contact() {
                             kkorabiowski@gmail.com
                         </Mail>
                     </ContactDesc>
-                    {/* <ContactForm/> */}
-                    <ContactFormNetlify/>
+                    <NewContactForm/>
                     </ContactFlex>
             </Container>
         </ContactSection>
