@@ -21,12 +21,11 @@ export default function ContactForm() {
             })}
             onSubmit={(values, {setSubmitting}) => {
                 setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
                     setSubmitting(false);
                 }, 400)
             }}
         >
-            <Form className="contact-form" data-netlify-recaptcha="true" data-netlify="true">
+            <Form className="contact-form" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                 <label htmlFor="firstName">Your name:</label>
                 <Field as={StyledInput} name="firstName" type="text"/>
                 <ErrorMessage component={StyledError} name="firstName"/>
