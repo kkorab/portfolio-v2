@@ -26,7 +26,7 @@ export default function ContactForm() {
                 }, 400)
             }}
         >
-            <Form className="contact-form" data-netlify="true">
+            <Form className="contact-form" data-netlify-recaptcha="true" data-netlify="true">
                 <label htmlFor="firstName">Your name:</label>
                 <Field as={StyledInput} name="firstName" type="text"/>
                 <ErrorMessage component={StyledError} name="firstName"/>
