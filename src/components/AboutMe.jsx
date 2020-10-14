@@ -49,7 +49,7 @@ export default function AboutMe() {
                 <PhotoAndDescCnt>
                     <Photo/>
                     <SectionDesc>
-                    I'm 26 years old engineer who isn't glad with previous career as a HVAC systems designer and decided to change path of career. I don't have any commercial experience doing web apps or pages, but I want to change it. I can make simple to-do apps, sliders, games (memory) in JS but I'm still learning this programming language. Now I'm going to improve my React skills and next I'm going to learn Redux. In the future I see myself as a professional Front-End Developer / Full-Stack Developer and step by step I realize my plan.<br/><i className="fas fa-map-pin"></i>Location: Warsaw, Poland.
+                    I’m engineer who isn’t glad with previous career as a HVAC systems designer and decided to change path of career. Everyday I improve my front-end skills and still learn new things. I can make webpages, e-commerce websites and simple apps such as to-do apps using React.js or Vanilla.js. I know tools such as React Hooks, React Router or Context API. Soon I’m going to learn TypeScript and Gatsby.js. In the future I see myself as a professional Front-End-Developer / Full-Stack Developer and step by step I realize my plan. By joining your company I commiting to make myself and my job the best as I can. Best Regards.<br/><i className="fas fa-map-pin"></i>Location: Warsaw, Poland.
                     </SectionDesc>
                 </PhotoAndDescCnt>
                 <SubHeadline>Education</SubHeadline>

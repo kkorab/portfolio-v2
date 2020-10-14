@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 import {Container} from './Hero';
 import {SectionTitle} from '../components/AboutMe';
-import ContactForm from './ContactForm';
-import ContactFormNetlify from './ContactFormNetlify';
 import NewContactForm from './NewContactForm';
 
 export default function Contact() {
