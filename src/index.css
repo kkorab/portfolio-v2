@@ -307,13 +307,90 @@ body {
 
 form label {
   display: block;
-  margin-top: 0.5rem;
+  margin-top: .5rem;
+  font-size: .875rem;
+  padding-bottom: .2rem;
+  transition: .5s all;
 }
 
-.contact-form {
+.form {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.form p {
+  margin: 0;
+  padding: 0;
+}
+
+.input {
+  color: white;
+  padding: .2rem .4rem;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: none;
+  font-family: var(--main-font);
+  outline: none;
+}
+
+.input-textarea {
+  color: white;
+  padding: .2rem .4rem;
+  width: 100%;
+  resize: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: none;
+  font-family: var(--main-font);
+  outline: none;
+  margin: 0;
+}
+
+.buttons-cnt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button {
+  margin: 0 .3rem;
+  padding: .3rem 1rem;
+  color: white;
+  font-family: var(--main-font);
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: .5s all;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--third-color);
+  background: white;
+}
+
+.danger {
+  font-size: .875rem;
+  text-transform: lowercase;
+  color: rgb(253, 94, 94);
+}
+
+.danger::first-letter {
+  text-transform: uppercase;
+}
+
+/* .contact-form {
   width: 100%;
   margin-top: 2rem;
-}
+} */
 
 
 @media (min-width: 800px) {
@@ -374,7 +451,11 @@ form label {
     .logo {
       width: 150px
     }
-    .contact-form {
+    /* .contact-form {
+      width: 49%;
+    } */
+
+    .form {
       width: 49%;
     }
 }

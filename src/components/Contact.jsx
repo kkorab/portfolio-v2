@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Container} from './Hero';
 import {SectionTitle} from '../components/AboutMe';
 import ContactForm from './ContactForm';
+import ContactFormNetlify from './ContactFormNetlify';
 
 export default function Contact() {
     return (
@@ -36,9 +37,8 @@ export default function Contact() {
                             kkorabiowski@gmail.com
                         </Mail>
                     </ContactDesc>
-                    <ContactForm>
-
-                    </ContactForm>
+                    {/* <ContactForm/> */}
+                    <ContactFormNetlify/>
                     </ContactFlex>
             </Container>
         </ContactSection>
