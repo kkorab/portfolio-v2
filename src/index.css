@@ -459,6 +459,10 @@ form label {
       width: 49%;
     } */
 
+    form {
+      width: 49%;
+    }
+
     .form {
       width: 49%;
     }
