@@ -38,7 +38,7 @@ const projectsData = [
         img: `${portfolioScreen}`,
         changeOrder: true,
         url: 'https://portfolio-kkorab.netlify.app/',
-        gitUrl: 'https://github.com/kkorab/portfolio'
+        gitUrl: 'https://github.com/kkorab/portfolio-v2'
     },
     {
         title: "MobileZilla",
