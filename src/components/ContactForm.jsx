@@ -41,7 +41,7 @@ export default function ContactForm() {
                   .finally(() => actions.setSubmitting(false))
             }}
         >
-            <Form className="contact-demo" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+            <Form className="contact-form" name="contact-demo" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                 <label htmlFor="firstName">Your name:</label>
                 <Field as={StyledInput} name="firstName" type="text"/>
                 <ErrorMessage component={StyledError} name="firstName"/>
