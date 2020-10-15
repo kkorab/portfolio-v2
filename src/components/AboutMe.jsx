@@ -49,7 +49,7 @@ export default function AboutMe() {
                 <PhotoAndDescCnt>
                     <Photo/>
                     <SectionDesc>
-                    I’m engineer who isn’t glad with previous career as a HVAC systems designer and decided to change path of career. Everyday I improve my front-end skills and still learn new things. I can make webpages, e-commerce websites and simple apps such as to-do apps using React.js or Vanilla.js. I know tools such as React Hooks, React Router or Context API. Soon I’m going to learn TypeScript and Gatsby.js. In the future I see myself as a professional Front-End-Developer / Full-Stack Developer and step by step I realize my plan. By joining your company I commiting to make myself and my job the best as I can. Best Regards.<br/><i className="fas fa-map-pin"></i>Location: Warsaw, Poland.
+                    I’m an engineer who isn’t glad with previous career as a HVAC systems designer and decided to change path of career. Everyday I improve my front-end skills and still learn new things. I can make webpages, e-commerce websites and simple apps such as to-do apps using React.js or Vanilla.js. I know tools such as React Hooks, React Router or Context API. Soon I’m going to learn TypeScript and Gatsby.js. In the future I see myself as a professional Front-End-Developer / Full-Stack Developer and step by step I realize my plan. By joining your company I commiting to make myself and my job the best as I can. Best Regards.<br/><i className="fas fa-map-pin"></i>Location: Warsaw, Poland.
                     </SectionDesc>
                 </PhotoAndDescCnt>
                 <SubHeadline>Education</SubHeadline>
